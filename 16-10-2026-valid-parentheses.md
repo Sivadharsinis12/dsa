@@ -28,22 +28,19 @@ Output: false
 Input:  s = "{[]}"
 Output: true
 ```
-s = "{[]}"
-stack =[]
-
-for ch in s:
- if ch =='(' or ch == '{' or ch == '[':
-   stack.append(ch)
-  else:
-    if not stack:
-        print(False)
-        break
-   last = stack.pop()
-    if (ch == ')' and last != '(') or \
-        (ch == '}' and last != '{' or \
-        (ch == ']' and last != '['):
-        print(False)
-        break
-  else:
-       print(len(stack) == 0)
+s = "{[{]}"
+stack = []
+for char in s:
+    if char in "({[":
+        stack.append(char)
+    elif char in ")}]":
+        if not stack:
+            print(False)
+            break
+        last = stack.pop()
+        if (char == ')' and last != '(') or (char == '}' and last != '{') or (char == ']' and last != '['):
+            print(False)
+            break
+else: 
+    print(len(stack) == 0)
         
