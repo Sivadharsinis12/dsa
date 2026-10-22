@@ -1,0 +1,46 @@
+# 2026-10-22 · Easy
+
+## Best Time to Buy and Sell Stock
+
+### Problem
+
+You are given an array `prices` where `prices[i]` is the price of a stock on day `i`.
+
+You want to maximize your profit by choosing **one day to buy** and a **different day in the future to sell**.
+
+Return the maximum profit you can achieve. If no profit is possible, return `0`.
+
+### Examples
+
+```
+Input:  prices = [7, 1, 5, 3, 6, 4]
+Output: 5
+Why:    Buy on day 2 (price = 1), sell on day 5 (price = 6). Profit = 6 - 1 = 5.
+
+Input:  prices = [7, 6, 4, 3, 1]
+Output: 0
+Why:    Prices only go down, so no profitable trade exists.
+```
+
+### Constraints
+
+- `1 <= prices.length <= 10^5`
+- `0 <= prices[i] <= 10^4`
+
+### Hints
+
+1. Brute force: try every buy/sell pair. What is the time complexity?
+2. For each day, what is the best day to have bought before it?
+3. Can you track the minimum price so far while scanning once?
+
+### Topics
+
+Arrays, one-pass scan, tracking a running minimum.
+
+---
+
+## Answer
+
+```python
+
+```

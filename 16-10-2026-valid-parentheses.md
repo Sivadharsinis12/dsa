@@ -28,6 +28,9 @@ Output: false
 Input:  s = "{[]}"
 Output: true
 ```
+
+## Answer 
+```
 s = "{[{]}"
 stack = []
 for char in s:
@@ -43,4 +46,4 @@ for char in s:
             break
 else: 
     print(len(stack) == 0)
-        
+```
