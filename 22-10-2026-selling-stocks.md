@@ -22,23 +22,6 @@ Output: 0
 Why:    Prices only go down, so no profitable trade exists.
 ```
 
-### Constraints
-
-- `1 <= prices.length <= 10^5`
-- `0 <= prices[i] <= 10^4`
-
-### Hints
-
-1. Brute force: try every buy/sell pair. What is the time complexity?
-2. For each day, what is the best day to have bought before it?
-3. Can you track the minimum price so far while scanning once?
-
-### Topics
-
-Arrays, one-pass scan, tracking a running minimum.
-
----
-
 ## Answer
 
 ```python
