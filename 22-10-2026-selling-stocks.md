@@ -27,3 +27,13 @@ Why:    Prices only go down, so no profitable trade exists.
 ```python
 
 ```
+prices= [7,1,5,3,6,4];
+max = 0
+min = prices[0]
+for i in range(len(prices)):
+if prices[i]<min:
+   min = prices[i]
+   profit = prices[i] - min
+if profit > max:
+   max = profit
+print(max)
