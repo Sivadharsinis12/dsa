@@ -25,8 +25,6 @@ Why:    Prices only go down, so no profitable trade exists.
 ## Answer
 
 ```python
-
-```
 prices= [7,1,5,3,6,4];
 max = 0
 min = prices[0]
