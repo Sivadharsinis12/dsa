@@ -34,6 +34,6 @@ for i in range(len(str)):
           print(-1) 
         else:
           str[i] != str[j]
-          print(-1)
+          print(0)
        
 ```
