@@ -1,5 +1,5 @@
 // Backend API URL
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://task-management-backend-a7cv.onrender.com/api/tasks";
 
 let tasks = [];
 let currentFilter = "all";
